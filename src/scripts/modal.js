@@ -12,6 +12,8 @@ const showModal = () => {
 }
 
 const renderModal = (id) => {
+    document.body.style.overflow = "hidden";
+
     const { title, text } = userData[id - 1]
 
     const div = document.createElement("div");
@@ -33,6 +35,7 @@ const closeModal = () => {
     closeBtn.onclick = (e) => {
         if (e.target.tagName.toLowerCase() === "span") {
             closeBtn.classList.add("close-animation")
+            document.body.style.overflow = "auto";
             renderPostIt(userData);
             setTimeout(() => {
                 document.querySelector(".modal").remove();

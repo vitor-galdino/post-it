@@ -34,9 +34,3 @@
 .close-animation {
     animation: modal .6s cubic-bezier(.51,.92,.24,1.15) reverse;
 }
-
-@media (max-width: 1050px) {
-    .modal .post {
-        width: 90vw;
-    }
-}
