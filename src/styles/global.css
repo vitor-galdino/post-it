@@ -32,5 +32,6 @@ main {
 @media (max-width: 1050px) {
     .modal .post {
         width: 90vw !important;
+        height: 70vh !important;
     }
 }
