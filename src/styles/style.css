@@ -26,13 +26,15 @@
     height: 30px;
     translate: 26px -26px;
     transform: rotate(120deg) scale(.8);
-    cursor: pointer;
     opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
     transition: .5s ease;
     z-index: 1;
 }
 
 .user-tool:hover::after {
+    pointer-events: all;
     opacity: 1;
     translate: 1px -1px;
     transform: rotate(0deg) scale(1);
