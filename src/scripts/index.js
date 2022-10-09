@@ -15,12 +15,16 @@ const renderPostIt = (obj) => {
         const { id, title, text } = elem;
 
         const div = document.createElement("div");
+        const span = document.createElement("span");
+        span.classList.add("user-tool");
+
         div.classList = `post cor-${id}`, div.id = id;
         div.innerHTML = `
         <input class="all-inputs" type="text" value="${title}" maxlength="22">
         <textarea class="all-inputs" name="post-${id}" cols="30" rows="10">${text}</textarea>
         `;
-        divContainer.append(div);
+        span.append(div);
+        divContainer.append(span);
     })
 }
 
