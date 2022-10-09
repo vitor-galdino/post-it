@@ -70,6 +70,7 @@ body {
     border-radius: 20px;
     transition: .4s;
     z-index: 1;
+    animation: modal .6s cubic-bezier(.51,.92,.24,1.15);
 }
 
 .post:hover {

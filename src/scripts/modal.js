@@ -4,6 +4,7 @@ const showModal = () => {
         button.onclick = (e) => {
             if (e.target.tagName.toLowerCase() === "span") {
                 renderModal(parseInt(e.target.children[0].id));
+                saveUserLog();
                 closeModal();
             }
         }
@@ -31,7 +32,12 @@ const closeModal = () => {
     const closeBtn = document.querySelector(".close-modal");
     closeBtn.onclick = (e) => {
         if (e.target.tagName.toLowerCase() === "span") {
-            document.querySelector(".modal").remove();
+            closeBtn.classList.add("close-animation")
+            renderPostIt(userData);
+            setTimeout(() => {
+                document.querySelector(".modal").remove();
+                showModal();
+            }, 600);
         }
     }
 }

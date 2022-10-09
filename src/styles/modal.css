@@ -15,6 +15,7 @@
 .modal .post {
     width: 50vw;
     height: 91vh;
+    animation: modal .6s cubic-bezier(.51,.92,.24,1.15);
 }
 
 .modal .post textarea {
@@ -28,6 +29,10 @@
 
 .modal .user-tool:hover::after {
     translate: 7px -7px;
+}
+
+.close-animation {
+    animation: modal .6s cubic-bezier(.51,.92,.24,1.15) reverse;
 }
 
 @media (max-width: 1050px) {

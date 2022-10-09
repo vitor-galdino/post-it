@@ -11,6 +11,7 @@ const checkUserLog = () => {
 
 const renderPostIt = (obj) => {
     const divContainer = document.querySelector(".container");
+    divContainer.innerHTML = "";
     obj.forEach((elem) => {
         const { id, title, text } = elem;
 
