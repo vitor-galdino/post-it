@@ -27,10 +27,6 @@
     background-image: url(../../src/assets/img/close.svg);
 }
 
-.modal .user-tool:hover::after {
-    translate: 7px -7px;
-}
-
 .close-animation {
     animation: modal .6s cubic-bezier(.51,.92,.24,1.15) reverse;
 }
